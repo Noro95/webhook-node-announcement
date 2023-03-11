@@ -11,7 +11,7 @@ export default async function handler(
 		return res.status(400).json({ statusText: "Bad Request" });
 	const body = JSON.parse(req.body);
 
-	const resData = await fetch(req.headers["webhook"], {
+	const resData = await fetch(req.headers["webhook"] + "?wait=true", {
 		method: "POST",
 		headers: {
 			"content-type": "application/json",
