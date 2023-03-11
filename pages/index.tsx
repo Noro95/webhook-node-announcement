@@ -170,13 +170,13 @@ export default function EmbedBuilder() {
 					>
 						&times;
 					</span>
-					<strong>Success!</strong> The message was sent successfully
+					<strong>Success!</strong> The message was sent successfully.
 				</div>
 			) : (
 				""
 			)}
 			<div className="m-[1rem] min-h-full max-w-screen lg:min-h-screen">
-				<h1 className="m-[auto] mb-[1rem]">
+				<h1 className="m-[auto] mb-[3rem] sm:mb-[1rem]">
 					<strong>Discord Webhook Embed Builder:</strong>
 					<button
 						onClick={() =>
@@ -267,7 +267,6 @@ export default function EmbedBuilder() {
 										placeholder="Extra Notes"
 										defaultChecked={false}
 										rows={4}
-										cols={50}
 										className="outline-none rounded-sm bg-[#2e3136] text-white resize max-w-[550px] min-w-[250px] min-h-[50px] max-h-[500px]"
 										onChange={(ev) =>
 											setNotes(ev.target.value)
