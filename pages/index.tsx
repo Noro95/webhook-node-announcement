@@ -50,7 +50,7 @@ export default function EmbedBuilder() {
 					className="text-gray-600 bg-orange-400 hover:bg-orange-600 focus:outline-none font-small rounded-md text-sm px-4 py-2.5 text-center inline-flex items-center"
 					type="button"
 				>
-					Dropdown button
+					Choose a node
 					<svg
 						className="w-4 h-4 ml-2"
 						aria-hidden="true"
